@@ -1,0 +1,516 @@
+// 首页样式
+// 导入common 样式
+@import "common";
+// link 是把一个样式文件引入到html 文件
+article, aside, blockquote, body, button, code, dd, dialog, div, dl, dt, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, input, legend, li, nav, ol, p, pre, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #333;
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+a{
+    color: #333;
+}
+@baseFont: 50;
+// <!-- 顶部搜索模块 -->
+.search-content {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 88rem / 50;
+    width: 15rem;
+    background-color: #FFC001;
+    .classify {
+        width: 44rem / @baseFont;
+        height: 70rem / @baseFont;
+        margin: 11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+        background: url(../images/classify.png) no-repeat;
+        background-size: 44rem / @baseFont 70rem / @baseFont;
+    }
+    .search {
+        flex: 1;
+        input {
+            width: 100%;
+            border: none;
+            height: 66rem / @baseFont;
+            border-radius: 33rem / @baseFont;
+            background-color: #FFF2CC;
+            margin-top: 12rem / @baseFont;
+            font-size: 25rem / @baseFont;
+            padding-left: 55rem / @baseFont;
+            color: #757575;
+        }
+    }
+    .login {
+        width: 75rem / @baseFont;
+        height: 70rem / @baseFont;
+        margin: 10rem / @baseFont;
+        font-size: 25rem / @baseFont;
+        line-height: 70rem / @baseFont;
+        text-align: center;
+        color: #fff;
+    }
+}
+// <!-- 顶部搜索模块 -->
+
+// 横幅模块
+.banner {
+    width: 750rem  / @baseFont;
+    height: 368rem / @baseFont;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+// 横幅模块
+// 广告模块
+.ad {
+    width: 750rem  / @baseFont;
+    // height: 368rem / @baseFont;
+    display: flex;
+    a {
+        img {
+            flex: 1;
+            width: 100%;
+        }
+    }
+}
+// 广告模块
+// 导航模块
+nav {
+    background-color: #F4F4F4;
+    width: 750rem / @baseFont;
+    a {
+        
+        float: left;
+        text-align: center;
+        height: 140rem / @baseFont;
+        width: 150rem / @baseFont;
+        img {
+            display: block;
+            width: 82rem / @baseFont;
+            height: 82rem / @baseFont;
+            margin: 10rem / @baseFont auto 0;
+        }
+        span {
+            vertical-align: top;
+            color: #333;
+            font-size: 25rem / @baseFont;
+        }
+    }
+
+}
+// 导航模块
+// 新人大礼包
+.newImgFloor-content{
+    width: 750rem  / @baseFont;
+    display: flex;
+    a{
+        margin-top: 20px;
+        margin-right: 2px;
+        img{
+            flex: 1;
+            width: 100%;
+        }
+    }
+    
+}
+// 促销空间
+.hor-view{
+    border-radius: 0.24rem 0.24rem 0 0;
+    overflow: hidden;
+    width: 14.04rem;
+    height: 5.16rem;
+    margin: 0  auto;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    .big-space{
+        position: relative;
+        width: 7rem;
+        height: 5.16rem;
+        padding-bottom: 0.266667rem;
+        background: #FFF;
+        .title-wrapper{
+            display: flex;
+            width: 7rem;
+            height: 1.16rem;
+            overflow: hidden;
+           
+            .title{
+                font-weight: 700;
+                font-size: .56rem;
+                line-height: .8rem;
+                max-width: 3.5rem;
+                height: .8rem;
+                margin: 0.36rem 0.16rem 0 0.48rem;
+                color: #333;
+            }
+        }
+        .des{
+            font-size: .48rem;
+            color: #999;
+            margin: 0.08rem 0 0 0.48rem;
+            width: 6rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            margin-top: .08rem;
+        }
+        .img-wrapper{
+            position: absolute;
+            width: 2.8rem;
+            height: 3.2rem;
+            top: 1.96rem;
+            left: .48rem;
+           img{
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            margin: 0 auto;
+           } 
+           .img-desc{
+            position: absolute;
+            bottom: 0;
+            left: -0.1rem;
+            box-sizing: border-box;
+            width: 3rem;
+            height: 1.08rem;
+            padding-top: 0.44rem;
+            line-height: .64rem;
+            overflow: hidden;
+            font-size: .4rem;
+            text-align: center;
+            color: #333;
+           }
+        }
+        .right-wrapper{
+            left: 3.72rem;
+        }
+    }
+}
+// 去除上圆角
+.no-ra{
+    border-radius: 0;
+}
+// 为您推荐
+.title-four{
+    display: flex;
+    width: 14.04rem;
+    height: 3.44rem;
+    background: #FFF;
+    border-radius: 0 0 0.24rem 0.24rem;
+    overflow: hidden;
+    margin: 0 auto;
+    .left-title{
+        box-sizing: border-box;
+        width: 3.46rem;
+        height: 3.44rem;
+        padding: .94rem .36rem 0 .36rem;
+        .title{
+            width: 2.74rem;
+            height: .9rem;
+            line-height: .9rem;
+            font-size: .64rem;
+            color: #444;
+            font-weight: bold;
+        }
+        .desc{
+            width: 2.74rem;
+            height: .64rem;
+            line-height: .64rem;
+            font-size: .48rem;
+            color: #999;
+        }
+        .line-clamp1{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .four-space{
+        display: flex;
+        width: 10.16rem;
+        height: 3.44rem;
+        justify-content: space-between;
+        .four-item{
+            position: relative;
+            box-sizing: border-box;
+            width: 2.4rem;
+            height: 3.44rem;
+            .click-area{
+                display: block;
+                width: 100%;
+                height: 100%;
+                .title{
+                    position: absolute;
+                    top: 2.48rem;
+                    left: 0;
+                    width: 2.4rem;
+                    height: .6rem;
+                    line-height: .6rem;
+                    font-size: .44rem;
+                    text-align: center;
+                    color: #333;
+                }
+                .line-clamp1{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .img-wrapper{
+                position: absolute;
+                display: block;
+                width: 2rem;
+                height: 2rem;
+                top: .36rem;
+                left: .2rem;
+                .pro-img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+}
+// 空白间隔
+.big-blank{
+    width: 15rem;
+    height: .48rem;
+    margin: 0 auto;
+
+}
+// 排行榜
+.new-bd{
+    padding-bottom: .26rem;
+    .title-image{
+        width: 15rem;
+        height: 1.2rem;
+        margin: 0 auto;
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .newbd-list{
+        .bd_three{
+            width: 14.04rem;
+            margin: 0 auto .26rem;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: space-between;
+            .bd-one-item{
+                position: relative;
+                width: 4.52rem;
+                height: 5.32rem;
+                border-radius: .24rem;
+                background: #FFF;
+                .click-area{
+                    .item-bg{
+                        position: absolute;
+                        width: 4.52rem;
+                        height: 1.86rem;
+                        left: 0;
+                        bottom: 0;
+                        border-radius: 0 0 .24rem .24rem;
+                    }
+                    .pro-image{
+                        position: relative;
+                        display: block;
+                        width: 3rem;
+                        height: 3rem;
+                        margin: .3rem auto 0;
+                    }
+                    .three-name{
+                        position: absolute;
+                        width: 100%;
+                        height: .68rem;
+                        top: 3.16rem;
+                        left: 0;
+                        display: -webkit-flex;
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            box-sizing: border-box;
+                            display: block;
+                            height: .68rem;
+                            font-size: .44rem;
+                            line-height: .6rem;
+                            min-width: 2rem;
+                            max-width: 4rem;
+                            background: #FFF;
+                            color: #D9A87A;
+                            border: .04rem solid #D9A87A;
+                            border-radius: .34rem;
+                            text-align: center;
+                            margin: 0 auto;
+                            overflow: hidden;
+                        }
+                    }
+                    .three-title{
+                        position: relative;
+                        width: 4.4rem;
+                        height: .64rem;
+                        font-size: .52rem;
+                        line-height: .64rem;
+                        margin: .62rem auto .06rem;
+                        color: #FFFFFF;
+                        text-align: center;
+                        overflow: hidden;
+                    }
+                    .three-desc{
+                        position: relative;
+                        width: 4rem;
+                        height: .48rem;
+                        line-height: .48rem;
+                        font-size: .44rem;
+                        margin: 0 auto;
+                        color: #FFFFFF;
+                        opacity: .8;
+                        text-align: center;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+        .bd-two{
+            display: -webkit-flex;
+            display: flex;
+            width: 14.04rem;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius: .24rem;
+            background: #FFF;
+            overflow: hidden;
+            .two-hang{
+                display: -webkit-flex;
+                display: flex;
+                width: 14.04rem;
+                margin: 0 auto;
+                .two-item{
+                    position: relative;
+                    box-sizing: border-box;
+                    width: 7rem;
+                    height: 4.8rem;
+                    background: #FFF;
+                    overflow: hidden;
+                    padding: .42rem 0 .32rem .36rem;
+                    .click-area{
+                        .first-text{
+                            display: -webkit-flex;
+                            display: flex;
+                            height: .64rem;
+                            .zTitle{
+                                display: block;
+                                max-width: 4.2rem;
+                                height: .64rem;
+                                line-height: .64rem;
+                                font-size: .52rem;
+                                font-weight: bold;
+                            }
+                            .two-name{
+                                position: relative;
+                                top: .02rem;
+                                display: block;
+                                background: #F9F5EE;
+                                border-radius: .56rem;
+                                height: .56rem;
+                                line-height: .56rem;
+                                font-size: .44rem;
+                                color: #AB813A;
+                                margin-left: .24rem;
+                                padding: 0 .24rem;
+                            }
+                        }
+                        .fTitle{
+                            display: block;
+                            width: 6.4rem;
+                            height: .6rem;
+                            line-height: .6rem;
+                            font-size: .48rem;
+                            margin-top: .12rem;
+                            color: #999;
+                        }
+                    }
+                    .img-wrapper{
+                        position: absolute;
+                        width: 2.8rem;
+                        height: 2.8rem;
+                        top: 1.86rem;
+                        left: .48rem;
+                        overflow: hidden;
+                        img{
+                            display: block;
+                            width: 2.8rem;
+                            height: 2.8rem;
+                            background: none;
+                        }
+                    }
+                    .right-wrapper{
+                        left: 3.72rem;
+                    }
+                }
+                .hor-gap{
+                    width: 1px;
+                    height: 100%;
+                    line-height: 0;
+                    background: #f2f2f2;
+                }
+            }
+            .space-px{
+                width: 14.04rem;
+                height: 1px;
+                margin: 0 auto;
+                background: #f2f2f2;
+            }
+        }
+    }
+}
+// 底部导航栏
+.v7-tab{
+    display: flex;
+    box-sizing: content-box;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 15rem;
+    height: 2rem;
+    z-index: 199;
+    border-top: 1px solid #EEE;
+    background: #FFF;
+    transition: all .2s linear;
+    a{
+        position: relative;
+        display: block;
+        width: 3rem;
+        height: 2rem;
+        background: #fff;
+       img{
+        display: block;
+        width: .96rem;
+        height: .96rem;
+        margin: .24rem auto 0;
+       }
+       span{
+        display: block;
+        font-size: 0.4rem;
+        line-height: .64rem;
+        color: #666;
+        text-align: center;
+       }
+    }
+}
